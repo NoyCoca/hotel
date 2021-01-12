@@ -1,5 +1,8 @@
 body {
     background-image: url(./backimg_.jpg);
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Imbue', serif;
+    font-size: 20px;
 }
 
 #con {
@@ -9,7 +12,7 @@ body {
         " sidebar info info info"
         " sidebar imgs imgs imgs"
         " footer footer footer footer";
-    grid-gap: 40px;
+    grid-gap: 30px;
 }
 
 #logo{
@@ -78,7 +81,7 @@ img:hover{
 
 .sidebar {
     grid-area: sidebar;
-    font-size: larger;
+    font-size: 30px;
     float: left;
     align-content: center;
 }
@@ -94,5 +97,6 @@ img:hover{
 .info{
     grid-area: info;
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 
 }
