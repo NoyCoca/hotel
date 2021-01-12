@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ece7c7606c.js" crossorigin="anonymous"></script>
+    <title>Aqua Dome</title>
+</head>
+<style>
+    body {
+        background-image: url(./backimg_.jpg);
+    }
+
+    #con {
+        display: grid;
+        grid-template-areas:
+            " header header header header"
+            " sidebar info info info"
+            " sidebar imgs imgs imgs"
+            " footer footer footer footer";
+        grid-gap: 40px;
+    }
+
+    #logo{
+        width: 80px;
+        height: 80px;
+        margin-left: 50px;
+        padding: 0;
+        float: left;
+        margin-left: 350px;
+        margin-top: -154px;
+    }
+
+    ul {
+        list-style-type: none;
+        border:  2px solid rgba(0, 0, 0, 0.12) ;
+        margin: 10px;
+        padding: 20px;   
+    }
+    ul p{
+        padding: 10px;
+        margin-bottom:20px;
+        background-color: #13546b;
+        color: #000000;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        
+    }
+
+    li {
+        padding: 10px;
+        margin-bottom:20px;
+        background-color: #509ebb;
+        color: #000000;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        text-align: center;
+    }
+
+    li:hover {
+        background-color: #6da5b8;
+    }
+
+
+    img {
+        width: 30%;
+        height: 40%;
+        border-radius: 25%;
+        box-shadow: rgba(0, 0, 0, 0.185) 10px 10px 10px 10px;
+        margin: 10px;
+        }
+
+    img:hover{
+        animation: ani 4s;
+    }
+    @keyframes ani{
+        0%{transform: rotatey(0deg)} 
+        100%{transform: rotatey(360deg) ;}
+    }
+
+    .header {
+        grid-area: header;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.158);
+        
+
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        font-size: larger;
+        float: left;
+        align-content: center;
+    }
+
+    .imgs {
+        grid-area: imgs;
+    }
+
+    .footer {
+        grid-area: footer;
+        text-align: center;
+    }
+    .info{
+        grid-area: info;
+        font-size: 20px;
+    
+    }
+</style>
+
+<body>
+    <div id="con">
+        <header class="header">
+            <h2>Aqua Dome Hotel</h2>
+            <h5>4 Sterne Superior Hotel & Tirol Therme Längenfel </h5>
+            <img id="logo" src="./logo.png" alt="logo" >
+            <img id="logo" src="./logo.png" alt="logo" >
+        </header>
+        <sidebar class="sidebar">
+            <ul> <p>Hotel information</p>
+                <li>Suite rooms</li>
+                <li>rooms</li>
+                <li>Dining Room</li>
+                <li>pool</li>
+                <li>Spa</li>
+                <li>sauna</li>
+                <li>attractions</li>
+                <li>Vacation Deals</li>
+                <li>Spa</li>
+            </ul>
+        </sidebar>
+        <div class="info">
+            The Aqua Dome 4 Sterne Superior Hotel & Tirol Therme Längenfeld is a luxurious 4-star superior hotel; It
+            offers
+            spectacular views of the Ötztal Alps, spacious and elegant rooms, as well as the only thermal spring in
+            Western
+            Austria.
+
+            The hotel's spectacular architecture blends harmoniously with its natural surroundings. The hotel's large
+            wellness area, which guests can use for free, offers 20,000 m2 of spa indulgences.
+            The outdoor spa area, large sunbathing lawn, saunas, beauty treatments, gym, as well as the Alpen Arche Noah
+            area for children and families, provide many options for bathing and leisure activities.
+
+            The restaurants serve regional and international cuisine, as well as healthy dishes, all in a stylish
+            atmosphere. Drinks are served in the lounge, bar and cozy wine bar, which features an open fireplace and
+            leather
+            sofas.
+
+            The hotel offers a separate water park for children and families, with 2 large pools and a huge water slide.
+            In
+            addition, families will be able to have fun in the playrooms.
+        </div>
+        <div class="imgs">
+            <img src="./img1.jpg" alt="img1">
+            <img src="./img2.jpg" alt="img2">
+            <img src="./img3.jpg" alt="img3">
+            <img src="./img4.jpg" alt="img4">
+            <img src="./img5.jpg" alt="img5">
+            <img src="./img7.jpg" alt="img6">
+        </div>
+
+        <footer class="footer">
+            <i class="far fa-envelope"></i> <a href="mailto:Aqua-Dome-Hotel@gmail.com">Aqua-Dome-Hotel@gmail.com</a>
+            <i class="fas fa-phone-alt"> 03-9858785</i>
+            <i class="fas fa-comment"></i> Leave a message:<input type="text">
+        </footer>
+
+    </div>
+</body>
+
+</html>
